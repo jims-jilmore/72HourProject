@@ -1,0 +1,16 @@
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Models.dll.config
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Models.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Models.pdb
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.xml
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.csproj.AssemblyReference.cache
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.csproj.CopyComplete
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.pdb
