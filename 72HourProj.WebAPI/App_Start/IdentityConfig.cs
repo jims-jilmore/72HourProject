@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using _72HourProj.WebAPI.Models;
 using _72HourProj.Data;
+using _72HourProj.Web;
 
 namespace _72HourProj.WebAPI
 {

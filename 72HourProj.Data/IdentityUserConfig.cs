@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using _72HourProj.Data;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _72HourProj.Data
+namespace _72HourProj.Web
 {
     public class IdentityUserConfiguration : IdentityDbContext<ApplicationUser>
     {

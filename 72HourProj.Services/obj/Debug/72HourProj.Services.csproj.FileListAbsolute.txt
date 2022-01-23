@@ -14,3 +14,9 @@ C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\obj\Debug\72HourProj.Servic
 C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\obj\Debug\72HourProj.Services.csproj.CopyComplete
 C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\obj\Debug\72HourProj.Services.dll
 C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\obj\Debug\72HourProj.Services.pdb
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\bin\Debug\72HourProj.Data.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\bin\Debug\72HourProj.Models.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\bin\Debug\72HourProj.Data.pdb
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\bin\Debug\72HourProj.Data.dll.config
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\bin\Debug\72HourProj.Models.pdb
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Services\bin\Debug\72HourProj.Models.dll.config
