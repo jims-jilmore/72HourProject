@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 
 namespace _72HourProj.Models.PostModels
 {
-    public class GetAllPosts
+    public class EditPost
     {
-        [Required]
+        public int PostId { get; set; }
+
         [Display(Name = "Title")]
         public string PostTitle { get; set; }
 
-        [Required]
         [Display(Name = "Content")]
         public string PostContent { get; set; }
 
-        [Required]
-        public DateTimeOffset CreatedUtc { get; set; }
     }
 }

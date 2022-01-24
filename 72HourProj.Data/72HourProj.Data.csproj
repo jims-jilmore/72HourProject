@@ -88,6 +88,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Migrations\202201241316518_FirstMigration.cs" />
+    <Compile Include="Migrations\202201241316518_FirstMigration.designer.cs">
+      <DependentUpon>202201241316518_FirstMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PostEntity\Post.cs" />
     <Compile Include="IdentityModels.cs" />
@@ -103,6 +107,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PostEntity\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202201241316518_FirstMigration.resx">
+      <DependentUpon>202201241316518_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -57,11 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PostModels\DeletePost.cs" />
     <Compile Include="PostModels\GetAllPosts.cs" />
-    <Compile Include="PostModels\GetPostByAuthId.cs" />
+    <Compile Include="PostModels\PostDetail.cs" />
     <Compile Include="PostModels\PostCreate.cs" />
-    <Compile Include="PostModels\PutPost.cs" />
+    <Compile Include="PostModels\EditPost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

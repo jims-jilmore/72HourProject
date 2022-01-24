@@ -5,36 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _72HourProj.Data.PostEntity
+namespace _72HourProj.Models.PostModels
 {
-    public class Post
+    public class PostDetail
     {
-        [Key]
         public int PostId { get; set; }
 
-        [Required]
         [Display(Name = "Title")]
         public string PostTitle { get; set; }
 
-        [Required]
         [Display(Name = "Content")]
         public string PostContent { get; set; }
 
-        [Required]
         public DateTimeOffset CreatedUtc { get; set; }
 
         public DateTimeOffset? ModifiedUtc { get; set; }
-
-        //[ForeignKey]
-        public Guid AuthorId { get; set; }
-        
-
-        //public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
-
-        //public virtual ICollection<Like> Likes { get; set; } = new List<Like>();  //<<<---Here in case we build a like model
-
-
-
-
     }
 }
