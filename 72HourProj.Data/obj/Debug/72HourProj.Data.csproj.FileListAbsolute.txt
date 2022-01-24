@@ -70,3 +70,4 @@ C:\ElevenFifty\BlueBadge\72HourProject\72HourProject\72HourProj.Data\obj\Debug\7
 C:\ElevenFifty\BlueBadge\72HourProject\72HourProject\72HourProj.Data\obj\Debug\72HourProj.Data.pdb
 C:\ElevenFifty\BlueBadge\72HourProject\72HourProject\72HourProj.Data\obj\Debug\_72HourProj.Data.Migrations.FirstMigration.resources
 C:\ElevenFifty\BlueBadge\72HourProject\72HourProject\72HourProj.Data\obj\Debug\72HourProj.Data.csproj.GenerateResource.cache
+C:\ElevenFifty\BlueBadge\72HourProject\72HourProject\72HourProj.Data\obj\Debug\_72HourProj.Data.Migrations.SecondMigration.resources

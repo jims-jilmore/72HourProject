@@ -92,6 +92,10 @@
     <Compile Include="Migrations\202201241316518_FirstMigration.designer.cs">
       <DependentUpon>202201241316518_FirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201241653270_SecondMigration.cs" />
+    <Compile Include="Migrations\202201241653270_SecondMigration.designer.cs">
+      <DependentUpon>202201241653270_SecondMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PostEntity\Post.cs" />
     <Compile Include="IdentityModels.cs" />
@@ -111,6 +115,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202201241316518_FirstMigration.resx">
       <DependentUpon>202201241316518_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201241653270_SecondMigration.resx">
+      <DependentUpon>202201241653270_SecondMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
