@@ -25,7 +25,6 @@ namespace _72HourProj.Data.PostEntity
 
         public DateTimeOffset? ModifiedUtc { get; set; }
 
-        //[ForeignKey]
         public Guid AuthorId { get; set; }
         
 
