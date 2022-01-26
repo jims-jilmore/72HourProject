@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="CommentEntity\Comment.cs" />
     <Compile Include="Migrations\202201241316518_FirstMigration.cs" />
     <Compile Include="Migrations\202201241316518_FirstMigration.designer.cs">
       <DependentUpon>202201241316518_FirstMigration.cs</DependentUpon>

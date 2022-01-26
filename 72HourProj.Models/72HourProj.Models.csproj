@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentModels\CommentCreate.cs" />
+    <Compile Include="CommentModels\CommentGet.cs" />
+    <Compile Include="CommentModels\CommentListItem.cs" />
     <Compile Include="PostModels\GetAllPosts.cs" />
     <Compile Include="PostModels\PostDetail.cs" />
     <Compile Include="PostModels\PostCreate.cs" />
@@ -66,6 +69,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\72HourProj.Data\72HourProj.Data.csproj">
+      <Project>{2ed2bf47-f7a5-4ce4-99cf-9e28e27856fd}</Project>
+      <Name>72HourProj.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
