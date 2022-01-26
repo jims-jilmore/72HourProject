@@ -68,9 +68,9 @@ namespace _72HourProj.Services.Services
                 var entity =
                     ctx
                         .Comments
-                        .Single(e => e.PostId =id);
+                        .Single(e => e.Post.PostId == id);
                 return
-                    new Comment
+                    new CommentGet()
                     {
                         CommentId = entity.CommentId,
                         PostId = entity.PostId,
