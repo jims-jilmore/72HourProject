@@ -47,6 +47,7 @@ namespace _72HourProj.Services.Services
                     .Where(p => p.AuthorId == _authorId)
                     .Select(p => new GetAllPosts()
                     {
+                        PostId = p.PostId,
                         PostTitle = p.PostTitle,
                         PostContent = p.PostContent,
                         CreatedUtc = p.CreatedUtc

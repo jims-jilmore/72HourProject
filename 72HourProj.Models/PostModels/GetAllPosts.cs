@@ -10,6 +10,8 @@ namespace _72HourProj.Models.PostModels
     public class GetAllPosts
     {
         [Required]
+        public int PostId { get; set; }
+        [Required]
         [Display(Name = "Title")]
         public string PostTitle { get; set; }
 
