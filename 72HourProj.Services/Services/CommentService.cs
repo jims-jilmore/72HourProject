@@ -23,7 +23,6 @@ namespace _72HourProj.Services.Services
             var entity =
                 new Comment()
                 {
-                    CommentId = model.CommentId,
                     AuthorId = _authorID,
                     Text = model.Text,
                     PostId = model.PostId,
@@ -61,22 +60,27 @@ namespace _72HourProj.Services.Services
             }
         }
 
-       public CommentGet getCommentById(int id)
+        public IEnumerable<CommentListItem> GetCommentsByID(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity =
+                var query =
                     ctx
                         .Comments
-                        .Single(e => e.Post.PostId == id);
-                return
-                    new CommentGet()
-                    {
-                        CommentId = entity.CommentId,
-                        PostId = entity.PostId,
-                        Text = entity.Text
-                    };
+                        .Where(e => e.PostId == id)
+                        .Select(
+                            e =>
+                            new CommentListItem
+                            {
+                                CommentId = e.CommentId,
+                                PostId = e.Post.PostId,
+                                Text = e.Text
+                            }
+                        );
+                return query.ToArray();
             }
         }
+
+        
     }
 }

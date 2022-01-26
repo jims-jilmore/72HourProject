@@ -109,3 +109,4 @@ C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Data\obj\Debug\72Hour
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Data\obj\Debug\72HourProj.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Data\obj\Debug\72HourProj.Data.dll
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Data\obj\Debug\72HourProj.Data.pdb
+C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Data\obj\Debug\_72HourProj.Data.Migrations.commentdb.resources
