@@ -1,5 +1,9 @@
+
 ﻿using _72HourProj.Data;
 using _72HourProj.Data.PostEntity;
+
+﻿using _72HourProj.Data.ReplyEntity;
+
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
@@ -23,7 +27,7 @@ namespace _72HourProj.Web
         public DbSet<Post> Posts { get; set; }
         public DbSet<Comment> Comments { get; set; }
         //<<<-------
-        //<<<-------
+        public DbSet<Reply> Replies { get; set; }
 
     }
 }

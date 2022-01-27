@@ -1,11 +1,13 @@
 using System.Web.Http;
 using WebActivatorEx;
+
 using _72HourProj.WebAPI;
 using Swashbuckle.Application;
 using Swashbuckle.Swagger;
 using System.Collections.Generic;
 using System.Web.Http.Description;
 using System.Linq;
+
 using System.Web.Http.Filters;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
@@ -50,42 +52,14 @@ namespace _72HourProj.WebAPI
                         "application/x-www-form-urlencoded"
                     },
                         parameters = new List<Parameter>
-                    {
-                        new Parameter
-                        {
-                            type = "string",
-                            name = "grant_type",
-                            required = true,
-                            @in = "formData"
-                        },
-                        new Parameter
-                        {
-                            type = "string",
-                            name = "username",
-                            required = false,
-                            @in = "formData"
-                        },
-                        new Parameter
-                        {
-                            type = "string",
-                            name = "password",
-                            required = false,
-                            @in = "formData"
-                        }
-                    }
-                    }
-                });
-            }
-        }
-        public class SwaggerConfig
+v
         {
-            public static void Register()
-            {
-                var thisAssembly = typeof(SwaggerConfig).Assembly;
+            var thisAssembly = typeof(SwaggerConfig).Assembly;
 
-                GlobalConfiguration.Configuration
-                    .EnableSwagger(c =>
-                    {
+            GlobalConfiguration.Configuration
+                .EnableSwagger(c =>
+                {
+
                     // By default, the service root url is inferred from the request used to access the docs.
                     // However, there may be situations (e.g. proxy and load-balanced environments) where this does not
                     // resolve correctly. You can workaround this by providing your own code to determine the root URL.
@@ -103,8 +77,10 @@ namespace _72HourProj.WebAPI
                     // additional fields by chaining methods off SingleApiVersion.
                     //
                     c.SingleApiVersion("v1", "ElevenNote.WebAPI");
+
                         c.OperationFilter(() => new AddAuthorizationHeaderParameterOperationFilter());
                         c.DocumentFilter<AuthTokenEndpointOperation>();
+
 
                     // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                     //
@@ -249,8 +225,10 @@ namespace _72HourProj.WebAPI
                     //
                     //c.CustomProvider((defaultProvider) => new CachingSwaggerProvider(defaultProvider));
                 })
+
                     .EnableSwaggerUi(c =>
                     {
+
                     // Use the "DocumentTitle" option to change the Document title.
                     // Very helpful when you have multiple Swagger pages open, to tell them apart.
                     //
@@ -322,6 +300,7 @@ namespace _72HourProj.WebAPI
                     //
                     //c.EnableApiKeySupport("apiKey", "header");
                 });
+
             }
         }
 

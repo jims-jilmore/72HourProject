@@ -1,4 +1,6 @@
-﻿[*.cs]
+
+[*.cs]
+
 
 # IDE0016: Use 'throw' expression
 dotnet_diagnostic.IDE0016.severity = suggestion
