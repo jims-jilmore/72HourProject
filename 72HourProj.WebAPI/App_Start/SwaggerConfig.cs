@@ -1,13 +1,11 @@
 using System.Web.Http;
 using WebActivatorEx;
-
 using _72HourProj.WebAPI;
 using Swashbuckle.Application;
 using Swashbuckle.Swagger;
 using System.Collections.Generic;
 using System.Web.Http.Description;
 using System.Linq;
-
 using System.Web.Http.Filters;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
@@ -38,23 +36,54 @@ namespace _72HourProj.WebAPI
             }
         }
 
-        class AuthTokenEndpointOperation : IDocumentFilter
+    class AuthTokenEndpointOperation : IDocumentFilter
+    {
+        public void Apply(SwaggerDocument swaggerDoc, SchemaRegistry schemaRegistry, IApiExplorer apiExplorer)
         {
-            public void Apply(SwaggerDocument swaggerDoc, SchemaRegistry schemaRegistry, IApiExplorer apiExplorer)
+            swaggerDoc.paths.Add("/token", new PathItem
             {
-                swaggerDoc.paths.Add("/token", new PathItem
+                post = new Operation
                 {
-                    post = new Operation
-                    {
-                        tags = new List<string> { "Auth" },
-                        consumes = new List<string>
+                    tags = new List<string> { "Auth" },
+                    consumes = new List<string>
                     {
                         "application/x-www-form-urlencoded"
                     },
-                        parameters = new List<Parameter>
-v
+                    parameters = new List<Parameter>
+                    {
+                        new Parameter
+                        {
+                            type = "string",
+                            name = "grant_type",
+                            required = true,
+                            @in = "formData"
+                        },
+                        new Parameter
+                        {
+                            type = "string",
+                            name = "username",
+                            required = false,
+                            @in = "formData"
+                        },
+                        new Parameter
+                        {
+                            type = "string",
+                            name = "password",
+                            required = false,
+                            @in = "formData"
+                        }
+                    }
+                }
+            });
+        }
+    }
+    public class SwaggerConfig
+    {
+        public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
+        
+    
 
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>

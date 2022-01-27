@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _72HourProj.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,6 +14,6 @@ namespace _72HourProj.Models.ReplyModels
         public int CommentId { get; set; }
         public string ReplyMessage { get; set; }
 
-        //public ICollection<Comment> Comment { get; set; }
+        public ICollection<Comment> Comment { get; set; }
     }
 }

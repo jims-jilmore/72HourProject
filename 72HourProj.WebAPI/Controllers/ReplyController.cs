@@ -10,9 +10,10 @@ using System.Web.Http;
 
 namespace _72HourProj.WebAPI.Controllers
 {
+    [Authorize]
     public class ReplyController : ApiController
     {
-        public ReplyService CreateReplyService()
+        private ReplyService CreateReplyService()
         {
             var authorId = Guid.Parse(User.Identity.GetUserId());
             var replyService = new ReplyService(authorId);

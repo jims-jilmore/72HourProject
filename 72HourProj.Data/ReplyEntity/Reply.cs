@@ -25,8 +25,8 @@ namespace _72HourProj.Data.ReplyEntity
 
         [ForeignKey("Comment"), Required]
         public int CommentId { get; set; }
-        //public virtual Comment Comment { get; set; }
+        public virtual Comment Comment { get; set; }
 
-       // public ICollection<Comment> Comment { get; set; } = new List<Comment>();
+        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
     }
 }
