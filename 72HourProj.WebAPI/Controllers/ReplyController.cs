@@ -10,16 +10,18 @@ using System.Web.Http;
 
 namespace _72HourProj.WebAPI.Controllers
 {
+    [Authorize]
     public class ReplyController : ApiController
     {
+       
         public ReplyService CreateReplyService()
         {
             var authorId = Guid.Parse(User.Identity.GetUserId());
             var replyService = new ReplyService(authorId);
             return replyService;
         }
-
-        public IHttpActionResult Comment(ReplyCreate reply)
+        
+        public IHttpActionResult Post (ReplyCreate reply)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -28,13 +30,13 @@ namespace _72HourProj.WebAPI.Controllers
                 return InternalServerError();
 
             return Ok();
-
         }
+        
 
-        public IHttpActionResult Get()
+        public IHttpActionResult Get(int id)
         {
             ReplyService replyService = CreateReplyService();
-            var reply = replyService.GetReplies();
+            var reply = replyService.GetRepliesById(id);
             return Ok(reply);
         }
     }

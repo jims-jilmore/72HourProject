@@ -28,5 +28,6 @@ namespace _72HourProj.Data.ReplyEntity
         public virtual Comment Comment { get; set; }
 
        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
     }
 }

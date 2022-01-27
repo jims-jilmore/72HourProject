@@ -1,16 +1,18 @@
 using System.Web.Http;
 using WebActivatorEx;
+using _72HourProj.WebAPI;
 using Swashbuckle.Application;
 using System.Linq;
 using Swashbuckle.Swagger;
 using System.Collections.Generic;
 using System.Web.Http.Description;
+using System.Linq;
 using System.Web.Http.Filters;
-using ElevenNote.WebAPI;
+
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace ElevenNote.WebAPI
+namespace 72HourProj.WebAPI
 {
     /// <summary>
     /// Document filter for adding Authorization header in Swashbuckle / Swagger.
@@ -41,10 +43,6 @@ namespace ElevenNote.WebAPI
         }
     }
 
-    /// <summary>
-    /// Document filter for adding OAuth Token endpoint documentation in Swashbuckle / Swagger.
-    /// Swagger normally won't find it - the /token endpoint - due to it being programmatically generated.
-    /// </summary>
     class AuthTokenEndpointOperation : IDocumentFilter
     {
         public void Apply(SwaggerDocument swaggerDoc, SchemaRegistry schemaRegistry, IApiExplorer apiExplorer)
@@ -59,6 +57,7 @@ namespace ElevenNote.WebAPI
                         "application/x-www-form-urlencoded"
                     },
                     parameters = new List<Parameter> {
+
                         new Parameter
                         {
                             type = "string",
@@ -85,12 +84,13 @@ namespace ElevenNote.WebAPI
             });
         }
     }
-
     public class SwaggerConfig
     {
         public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
+        
+    
 
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>

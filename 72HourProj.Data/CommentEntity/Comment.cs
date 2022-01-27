@@ -1,4 +1,5 @@
 ﻿using _72HourProj.Data.PostEntity;
+using _72HourProj.Data.ReplyEntity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -21,6 +22,6 @@ namespace _72HourProj.Data
         public int PostId { get; set; }
         public virtual Post Post { get; set; }
 
-        //public virtual ICollection<Reply> Reply { get; set; } = new List<Reply>();
+        public virtual ICollection<Reply> Reply { get; set; } = new List<Reply>();
     }
 }
