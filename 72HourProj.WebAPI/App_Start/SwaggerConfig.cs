@@ -1,92 +1,65 @@
 using System.Web.Http;
 using WebActivatorEx;
-using ElevenNote.WebAPI;
+
+using _72HourProj.WebAPI;
 using Swashbuckle.Application;
-using System.Linq;
 using Swashbuckle.Swagger;
 using System.Collections.Generic;
 using System.Web.Http.Description;
+using System.Linq;
+
 using System.Web.Http.Filters;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace ElevenNote.WebAPI
+namespace _72HourProj.WebAPI
 {
-
-    public class AddAuthorizationHeaderParameterOperationFilter : IOperationFilter
-    {
-        public void Apply(Operation operation, SchemaRegistry schemaRegistry, ApiDescription apiDescription)
+        public class AddAuthorizationHeaderParameterOperationFilter : IOperationFilter
         {
-            var filterPipeline = apiDescription.ActionDescriptor.GetFilterPipeline();
-            var isAuthorized = filterPipeline.Select(filterInfo => filterInfo.Instance).Any(filter => filter is IAuthenticationFilter);
-
-            var allowAnonymous = apiDescription.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any();
-
-            if (!isAuthorized || allowAnonymous) return;
-
-            if (operation.parameters == null) operation.parameters = new List<Parameter>();
-
-            operation.parameters.Add(new Parameter
+            public void Apply(Operation operation, SchemaRegistry schemaRegistry, ApiDescription apiDescription)
             {
-                name = "Authorization",
-                @in = "header",
-                description = "from /token endpoint",
-                required = true,
-                type = "string,"
-            });
-        }
-    }
+                var filterPipeline = apiDescription.ActionDescriptor.GetFilterPipeline();
+                var isAuthorized = filterPipeline.Select(filterInfo => filterInfo.Instance).Any(filter => filter is IAuthenticationFilter);
 
-    class AuthTokenEndpointOperation : IDocumentFilter
-    {
-        public void Apply(SwaggerDocument swaggerDoc, SchemaRegistry schemaRegistry, IApiExplorer apiExplorer)
-        {
-            swaggerDoc.paths.Add("/token", new PathItem
-            {
-                post = new Operation
+                var allowAnonymous = apiDescription.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any();
+
+                if (!isAuthorized || allowAnonymous) return;
+
+                if (operation.parameters == null) operation.parameters = new List<Parameter>();
+
+                operation.parameters.Add(new Parameter
                 {
-                    tags = new List<string> { "Auth" },
-                    consumes = new List<string>
+                    name = "Authorization",
+                    @in = "header",
+                    description = "from /token endpoint",
+                    required = true,
+                    type = "string,"
+                });
+            }
+        }
+
+        class AuthTokenEndpointOperation : IDocumentFilter
+        {
+            public void Apply(SwaggerDocument swaggerDoc, SchemaRegistry schemaRegistry, IApiExplorer apiExplorer)
+            {
+                swaggerDoc.paths.Add("/token", new PathItem
+                {
+                    post = new Operation
+                    {
+                        tags = new List<string> { "Auth" },
+                        consumes = new List<string>
                     {
                         "application/x-www-form-urlencoded"
                     },
-                    parameters = new List<Parameter>
-                    {
-                        new Parameter
-                        {
-                            type = "string",
-                            name = "grant_type",
-                            required = true,
-                            @in = "formData"
-                        },
-                        new Parameter
-                        {
-                            type = "string",
-                            name = "username",
-                            required = false,
-                            @in = "formData"
-                        },
-                        new Parameter
-                        {
-                            type = "string",
-                            name = "password",
-                            required = false,
-                            @in = "formData"
-                        }
-                    }
-                }
-            });
-        }
-    }
-    public class SwaggerConfig
-    {
-        public static void Register()
+                        parameters = new List<Parameter>
+v
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
 
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>
                 {
+
                     // By default, the service root url is inferred from the request used to access the docs.
                     // However, there may be situations (e.g. proxy and load-balanced environments) where this does not
                     // resolve correctly. You can workaround this by providing your own code to determine the root URL.
@@ -104,8 +77,10 @@ namespace ElevenNote.WebAPI
                     // additional fields by chaining methods off SingleApiVersion.
                     //
                     c.SingleApiVersion("v1", "ElevenNote.WebAPI");
-                    c.OperationFilter(() => new AddAuthorizationHeaderParameterOperationFilter());
-                    c.DocumentFilter<AuthTokenEndpointOperation>();
+
+                        c.OperationFilter(() => new AddAuthorizationHeaderParameterOperationFilter());
+                        c.DocumentFilter<AuthTokenEndpointOperation>();
+
 
                     // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                     //
@@ -250,8 +225,10 @@ namespace ElevenNote.WebAPI
                     //
                     //c.CustomProvider((defaultProvider) => new CachingSwaggerProvider(defaultProvider));
                 })
-                .EnableSwaggerUi(c =>
-                {
+
+                    .EnableSwaggerUi(c =>
+                    {
+
                     // Use the "DocumentTitle" option to change the Document title.
                     // Very helpful when you have multiple Swagger pages open, to tell them apart.
                     //
@@ -323,6 +300,8 @@ namespace ElevenNote.WebAPI
                     //
                     //c.EnableApiKeySupport("apiKey", "header");
                 });
+
+            }
         }
+
     }
-}
