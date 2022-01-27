@@ -105,6 +105,10 @@
     <Compile Include="Migrations\202201272129350_DevTwo Migration.designer.cs">
       <DependentUpon>202201272129350_DevTwo Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201272308515_testfix.cs" />
+    <Compile Include="Migrations\202201272308515_testfix.designer.cs">
+      <DependentUpon>202201272308515_testfix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PostEntity\Post.cs" />
     <Compile Include="IdentityModels.cs" />
@@ -134,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201272129350_DevTwo Migration.resx">
       <DependentUpon>202201272129350_DevTwo Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201272308515_testfix.resx">
+      <DependentUpon>202201272308515_testfix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
