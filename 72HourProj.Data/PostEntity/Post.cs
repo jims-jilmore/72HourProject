@@ -27,8 +27,7 @@ namespace _72HourProj.Data.PostEntity
 
         public Guid AuthorId { get; set; }
         
-
-        //public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+        public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
         //public virtual ICollection<Like> Likes { get; set; } = new List<Like>();  //<<<---Here in case we build a like model
 

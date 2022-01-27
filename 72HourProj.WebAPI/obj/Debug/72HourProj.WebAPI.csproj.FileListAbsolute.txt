@@ -377,3 +377,5 @@ C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.WebAPI\obj\Debug\72Ho
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.WebAPI\obj\Debug\72HourProj.WebAPI.csproj.CopyComplete
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.WebAPI\obj\Debug\72HourProj.WebAPI.dll
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.WebAPI\obj\Debug\72HourProj.WebAPI.pdb
+C:\ElevenFiftyBlue\72HourProject\72HourProj.WebAPI\bin\Swashbuckle.Core.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.WebAPI\bin\WebActivatorEx.dll

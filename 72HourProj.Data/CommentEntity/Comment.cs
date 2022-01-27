@@ -19,7 +19,6 @@ namespace _72HourProj.Data
         public Guid AuthorId { get; set; }
         [ForeignKey("Post")]
         public int PostId { get; set; }
-
         public virtual Post Post { get; set; }
 
         //public virtual ICollection<Reply> Reply { get; set; } = new List<Reply>();

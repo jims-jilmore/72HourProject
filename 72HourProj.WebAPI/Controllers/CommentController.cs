@@ -41,6 +41,12 @@ namespace _72HourProj.WebAPI.Controllers
             return Ok(comment);
         }
 
+        public IHttpActionResult Get(int id)
+        {
+            CommentService commentService = CreateCommentService();
+            var comment = commentService.GetCommentsByID(id);
+            return Ok(comment);
+        }
 
     }
 }
