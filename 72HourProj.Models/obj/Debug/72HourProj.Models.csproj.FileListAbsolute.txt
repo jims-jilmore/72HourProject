@@ -49,3 +49,6 @@ C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Models\obj\Debug\72Ho
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Data.dll
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Data.pdb
 C:\ElevenFiftyProjects\Challenges\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Data.dll.config
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Data.dll
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Data.pdb
+C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Data.dll.config
