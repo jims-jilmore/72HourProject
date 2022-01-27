@@ -23,7 +23,7 @@ namespace _72HourProj.Data.ReplyEntity
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
 
-        [ForeignKey("Comment"), Required]
+        [ForeignKey("Comment")]
         public int CommentId { get; set; }
         public virtual Comment Comment { get; set; }
 
