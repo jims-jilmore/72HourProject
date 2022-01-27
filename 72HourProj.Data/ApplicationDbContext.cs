@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using _72HourProj.Data.ReplyEntity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -21,7 +22,7 @@ namespace _72HourProj.Data
         //<<<-------
         //<<<-------
         //<<<-------
-        //<<<-------
+        public DbSet<Reply> Replies { get; set; }
 
     }
 }

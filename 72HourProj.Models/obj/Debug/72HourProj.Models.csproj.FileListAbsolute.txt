@@ -14,3 +14,18 @@ C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.c
 C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.csproj.CopyComplete
 C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.dll
 C:\ElevenFiftyBlue\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.pdb
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Models.dll.config
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Models.dll
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\72HourProj.Models.pdb
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.dll
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.xml
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.csproj.AssemblyReference.cache
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.dll
+C:\Users\Andrew\OneDrive\Desktop\Eleven Fifty Projects\BlueBadge\72HourProject\72HourProject\72HourProj.Models\obj\Debug\72HourProj.Models.pdb

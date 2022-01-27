@@ -88,6 +88,7 @@
     <Compile Include="IdentityModels.cs" />
     <Compile Include="IdentityUserConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplyEntity\Reply.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
