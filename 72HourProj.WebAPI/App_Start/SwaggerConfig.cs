@@ -8,11 +8,11 @@ using System.Collections.Generic;
 using System.Web.Http.Description;
 using System.Linq;
 using System.Web.Http.Filters;
-using ElevenNote.WebAPI;
+
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace ElevenNote.WebAPI
+namespace 72HourProj.WebAPI
 {
     /// <summary>
     /// Document filter for adding Authorization header in Swashbuckle / Swagger.
@@ -56,8 +56,8 @@ namespace ElevenNote.WebAPI
                     {
                         "application/x-www-form-urlencoded"
                     },
-                    parameters = new List<Parameter>
-                    {
+                    parameters = new List<Parameter> {
+
                         new Parameter
                         {
                             type = "string",
